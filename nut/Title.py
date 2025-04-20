@@ -641,7 +641,7 @@ class Title:
 			elif width is None:
 				width = int(height * ar)
 
-			out = im.resize((width, height), PIL.Image.Resampling.LANCZOS)
+			out = im.resize((width, height), Image.Resampling.LANCZOS)
 			out.save(path, quality=100)
 
 		return path
